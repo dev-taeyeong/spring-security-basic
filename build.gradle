@@ -13,9 +13,17 @@ repositories {
 }
 
 dependencies {
+    // Spring Boot
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Spring Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+ext['spring-security.version'] = '5.7.8'
 
 tasks.named('test') {
     useJUnitPlatform()
